@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.project.UIFragments.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_goods"
+        android:name="com.example.project.UIFragments.Goods.GoodsFragment"
+        android:label="@string/menu_goods"
+        tools:layout="@layout/fragment_goods" />
+
+    <fragment
+        android:id="@+id/nav_fav"
+        android:name="com.example.project.UIFragments.fav.favFragment"
+        android:label="@string/menu_fav"
+        tools:layout="@layout/fragment_fav" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.example.project.UIFragments.cart.CartFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.project.UIFragments.contact.ContactFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_contact" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.project.UIFragments.logout.LogoutFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/nav_sale"
+        android:name="com.example.project.UIFragments.sale.SaleFragment"
+        android:label="fragment_sale"
+        tools:layout="@layout/fragment_fav" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.project.UIFragments.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

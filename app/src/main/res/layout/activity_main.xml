@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.MainActivity" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="432dp"
+            android:layout_height="869dp"
+            android:layout_weight="1"
+            android:background="#7DFFFFFF"
+            android:focusable="auto"
+            android:scaleType="fitXY"
+            android:tint="#66FFFFFF"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/back1" />
+
+        <Button
+            android:id="@+id/button"
+            style="@android:style/Widget.Material.Light.Button.Toggle"
+            android:layout_width="429dp"
+            android:layout_height="178dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="#664CAF50"
+            android:text="Continue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.Material.Light.ProgressBar"
+            android:layout_width="183dp"
+            android:layout_height="201dp"
+            android:background="#9CFFFFFF"
+            android:foreground="@android:color/holo_purple"
+            android:foregroundTint="#000A0909"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
